@@ -32,7 +32,13 @@ if (n <= 0) {
     // 配列の内容を出力
     printf("配列の内容: ");
     for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+        
+      if (i == n - 1) {
+    printf("%d", arr[i]);
+} else {
+    printf("%d, ", arr[i]);
+}
+  
     }
     printf("\n");
 
