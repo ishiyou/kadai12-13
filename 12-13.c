@@ -30,6 +30,13 @@ int main() {
     }
     printf("\n");
 
+    // 配列の合計値を計算
+int sum = 0;
+for (int i = 0; i < n; i++) {
+    sum += arr[i];
+}
+printf("配列の合計値: %d\n", sum);
+
     // 動的メモリの解放
     free(arr);
 
