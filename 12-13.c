@@ -9,6 +9,12 @@ int main() {
     printf("配列のサイズを入力してください: ");
     scanf("%d", &n);
 
+    // 入力値のチェック
+if (n <= 0) {
+    printf("エラー: 配列のサイズは正の整数で入力してください。\n");
+    return 1;
+}
+
     // 動的メモリ確保
     arr = (int *)malloc(n * sizeof(int));
 
