@@ -43,6 +43,10 @@ for (int i = 0; i < n; i++) {
 }
 printf("配列の合計値: %d\n", sum);
 
+// 配列の平均値を計算
+double average = (double)sum / n;
+printf("配列の平均値: %.2f\n", average);
+
     // 動的メモリの解放
     free(arr);
 
